@@ -9,10 +9,53 @@
 <body>
     <h1>Google search</h1>
     
+    <div class="buttons">
+    <a href="./index.html" class="buttons">
+    <button>Voltar</button>
+    </a>
+    </div>
+    
     <style>
         h1 {
            text-align: center;
         }
+        body {
+            background-color: aqua;
+        }
+        .buttons {
+            margin-top: 2.4rem;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+        }
+        .buttons > button {
+            background: #fff;
+            color: #000;
+            border-radius: 5px;
+            text-align: center;
+            align-items: center;
+            text-decoration: none;
+            margin: 1.2rem;
+            padding: 1.5rem 4.5rem;
+            border: 0.1rem solid #fff;
+            font-size: 1.6rem;
+            font-weight: 500;
+            cursor: pointer;
+            -webkit-transition: .2s ease-in;
+            transition: .2s ease-in;
+        }
+        .buttons > button.outlined {
+        background: transparent;
+        color: gray;
+        border: 0.1rem solid gray;
+        }
+
+        .buttons > button:hover {
+        background: transparent;
+        color: #fff;
+        border: 0.1rem solid #fff;
+        }
+
     </style>
 </body>
 </html>
